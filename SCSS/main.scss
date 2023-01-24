@@ -42,7 +42,7 @@ html, body {
         line-height: 1.33;
         text-align: center;
         text-transform: uppercase;
-        color: #898F8F;
+        color:  $txt-col1;
     }
     &__title {
         font-family: 'Roboto';
@@ -51,7 +51,7 @@ html, body {
         line-height: 1.1;
         text-align: center;
         text-transform: uppercase;
-        color: #FFCC00;
+        color: $color-main;
     }
     &__logo {
         
@@ -64,7 +64,7 @@ html, body {
             content: '';
             position: absolute;
             width: 210px;
-            border-bottom: 1px solid #FFCC00;
+            @extend %border-bottom;
             top: 12px;
             right: 25px;
         }
@@ -73,7 +73,7 @@ html, body {
             content: '';
             position: absolute;
             width: 210px;
-            border-bottom: 1px solid #FFCC00;
+            @extend %border-bottom;
             top: 12px;
             left: 25px;
         }
@@ -95,14 +95,14 @@ html, body {
         height: 400px;
     }
     background:
-    linear-gradient(to right, #FFCC00 1px, transparent 1px) 0 0,
-    linear-gradient(to right, #FFCC00 1px, transparent 1px) 0 100%,
-    linear-gradient(to left, #FFCC00 1px, transparent 1px) 100% 0,
-    linear-gradient(to left, #FFCC00 1px, transparent 1px) 100% 100%,
-    linear-gradient(to bottom, #FFCC00 1px, transparent 1px) 0 0,
-    linear-gradient(to bottom, #FFCC00 1px, transparent 1px) 100% 0,
-    linear-gradient(to top, #FFCC00 1px, transparent 1px) 0 100%,
-    linear-gradient(to top, #FFCC00 1px, transparent 1px) 100% 100%;
+    linear-gradient(to right, $color-main 1px, transparent 1px) 0 0,
+    linear-gradient(to right, $color-main 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, $color-main 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, $color-main 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, $color-main 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, $color-main 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, $color-main 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, $color-main 1px, transparent 1px) 100% 100%;
 
     background-repeat: no-repeat;
     background-size: 100px 100px;
@@ -110,7 +110,7 @@ html, body {
     &::after {
         content: '';
         height: 560px;
-        border-right: 1px solid #FFCC00;
+        border-right: 1px solid $color-main;
         position: absolute;
         right: -85px;
         top: -65px;
@@ -132,7 +132,7 @@ html, body {
         line-height: 1.16;
         text-align: center;
         text-transform: capitalize;
-        color: #666666;
+        color: $title-col;
         position: relative;
         margin: 0 0 30px 0;
 
@@ -140,7 +140,7 @@ html, body {
             content: '';
             position: absolute;
             width: 100px;
-            border-bottom: 1px solid #FFCC00;
+            @extend %border-bottom;
             bottom: -30px;
             left: 65px;
 
@@ -154,7 +154,7 @@ html, body {
         line-height: 1.5;
         text-align: center;
         text-transform: capitalize;
-        color: #666666;
+        color: $title-col;
         margin: 0;
     }
     &__text {
@@ -163,7 +163,7 @@ html, body {
         font-size: 14px;
         line-height: 1.71;
         text-align: center;
-        color: #333333;
+        color: $txt-col2;
         max-width: 430px;
         margin: 0;
         position: relative;
@@ -176,7 +176,7 @@ html, body {
         margin-top: -10px;
     }
     line {
-        stroke: #FFCC00;
+        stroke: $color-main;
         stroke-dasharray: 10px 5px 20px 5px;
         stroke-width: 4px;
       }
@@ -192,14 +192,14 @@ html, body {
     padding: 5px 10px;
     width: 118px;
     height: 24px;
-    border: 1px solid #FFCC00;
+    border: 1px solid $color-main;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
-    color: #666666;
+    color: $title-col;
     background: none;
 
 }

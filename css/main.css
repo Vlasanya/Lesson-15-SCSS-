@@ -308,6 +308,10 @@ template {
   display: none;
 }
 
+.descr__title::after, .header__logo::after, .header__logo::before {
+  border-bottom: 1px solid #FFCC00;
+}
+
 @font-face {
   font-family: "Raleway";
   src: url(../assets/fonts/Raleway/Raleway-Regular.woff) format("woff"), url(../assets/fonts/Raleway/Raleway-Regular.ttf) format("truetype");
@@ -392,7 +396,6 @@ html, body {
   content: "";
   position: absolute;
   width: 210px;
-  border-bottom: 1px solid #FFCC00;
   top: 12px;
   right: 25px;
 }
@@ -400,7 +403,6 @@ html, body {
   content: "";
   position: absolute;
   width: 210px;
-  border-bottom: 1px solid #FFCC00;
   top: 12px;
   left: 25px;
 }
@@ -450,7 +452,6 @@ html, body {
   content: "";
   position: absolute;
   width: 100px;
-  border-bottom: 1px solid #FFCC00;
   bottom: -30px;
   left: 65px;
 }

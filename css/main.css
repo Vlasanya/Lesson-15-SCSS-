@@ -362,6 +362,7 @@ html, body {
   display: flex;
   flex-direction: column;
   margin-bottom: 105px;
+  align-items: center;
 }
 .header__subtitle {
   font-family: "Raleway", sans-serif;
@@ -384,6 +385,8 @@ html, body {
 .header__logo {
   text-align: center;
   position: relative;
+  width: 20px;
+  height: 20px;
 }
 .header__logo::before {
   content: "";
@@ -391,7 +394,7 @@ html, body {
   width: 210px;
   border-bottom: 1px solid #FFCC00;
   top: 12px;
-  left: 360px;
+  right: 25px;
 }
 .header__logo::after {
   content: "";
@@ -399,7 +402,7 @@ html, body {
   width: 210px;
   border-bottom: 1px solid #FFCC00;
   top: 12px;
-  right: 360px;
+  left: 25px;
 }
 
 .photo {

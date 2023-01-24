@@ -32,6 +32,7 @@ html, body {
     display: flex;
     flex-direction: column;
     margin-bottom: 105px;
+    align-items: center;
     
     
     &__subtitle {
@@ -56,6 +57,8 @@ html, body {
         
         text-align: center;
         position: relative;
+        width: 20px;
+        height: 20px;
         
         &::before {
             content: '';
@@ -63,7 +66,7 @@ html, body {
             width: 210px;
             border-bottom: 1px solid #FFCC00;
             top: 12px;
-            left: 360px;
+            right: 25px;
         }
         
         &::after {
@@ -72,7 +75,7 @@ html, body {
             width: 210px;
             border-bottom: 1px solid #FFCC00;
             top: 12px;
-            right: 360px;
+            left: 25px;
         }
     }
 
